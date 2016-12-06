@@ -16,7 +16,9 @@ public class OutDegree extends BasicComputation<
 	public void compute(
 			Vertex<LongWritable, LongWritable, NullWritable> vertex,
 			Iterable<DoubleWritable> messages) throws IOException {
-
-		// TODO write your code here
+		LongWritable vertexValue = vertex.getValue();
+		vertexValue.set(vertex.getNumEdges());
+		vertex.setValue(vertexValue);
+		vertex.voteToHalt();
 	}
 }

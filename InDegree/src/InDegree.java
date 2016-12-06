@@ -17,7 +17,20 @@ public class InDegree extends BasicComputation<
 	public void compute(
 			Vertex<LongWritable, LongWritable, NullWritable> vertex,
 			Iterable<DoubleWritable> messages) throws IOException {
-
-			// TODO write your code here...
+		if (getSuperstep() == 0) {
+			Iterable<Edge<LongWritable, NullWritable>> edges = vertex.getEdges();
+			for (Edge<LongWritable, NullWritable> edge : edges) {
+				sendMessage(edge.getTargetVertexId(), new DoubleWritable(1.0));
+			}
+		} else {
+			long sum = 0;
+			for (DoubleWritable message : messages) {
+				sum++;
+			}
+			LongWritable vertexValue = vertex.getValue();
+			vertexValue.set(sum);
+			vertex.setValue(vertexValue);
+			vertex.voteToHalt();
+		}
 	}
 }
