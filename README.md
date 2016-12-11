@@ -2,11 +2,22 @@ Giraph Tutorial Demo Code
 =========================
 
 **Sapienza, University of Rome**
-*Master of Science in Engineering in Computer Science*
-Prof. A. Anagnostopoulos, I. Chatzigiannakis, A. Gionis
-*Data Mining* class
-Fall 2016
 
+*Master of Science in Engineering in Computer Science*
+
+[*Data Mining* class, Fall 2016](http://aris.me/index.php/data-mining-2016)
+
+Tutorial handled by:
+
+- [Simone Santacroce](https://it.linkedin.com/in/simone-santacroce-272739134)
+- [Manuel Coppotelli](https://it.linkedin.com/in/manuelcoppotelli)
+- [George Adrian Munteanu](https://it.linkedin.com/in/george-adrian-munteanu-707744134)
+- [Lorenzo Marconi](https://www.linkedin.com/in/lorenzo-marconi-1a2580105)
+- [Antonio La Torre](https://www.linkedin.com/in/antonio-la-torre-768738134)
+- [Lucio Burlini](https://www.linkedin.com/in/lucio-burlini-827739134)
+
+
+---
 
 This repo contains the three Giraph Jobs presented during the *Giraph Tutorial*
 
@@ -22,12 +33,3 @@ You can find the related presentation on [Slideshare](http://www.slideshare.net/
 
 
 Enjoy!
-
-The Giraph team:
-
-- Simone Santacroce
-- Manuel Coppotelli
-- George Adrian Munteanu
-- Lorenzo Marconi
-- Antonio La Torre
-- Lucio Burlini
